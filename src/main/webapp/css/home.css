@@ -1,0 +1,179 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.hero-section {
+	background: linear-gradient(135deg, rgba(102, 126, 234, 0.9) 0%,
+		rgba(118, 75, 162, 0.9) 100%),
+		url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3')
+		center/cover;
+	height: 80vh;
+	display: flex;
+	align-items: center;
+	color: white;
+	position: relative;
+}
+
+.hero-content {
+	text-align: center;
+	z-index: 2;
+}
+
+.hero-title {
+	font-size: 3.5rem;
+	font-weight: 700;
+	margin-bottom: 1.5rem;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+	font-size: 1.25rem;
+	margin-bottom: 2rem;
+	opacity: 0.95;
+}
+
+.search-box {
+	background: rgba(255, 255, 255, 0.95);
+	border-radius: 15px;
+	padding: 2rem;
+	margin-top: 3rem;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.stats-section {
+	background: #f8f9fa;
+	padding: 5rem 0;
+}
+
+.stats-card {
+	background: white;
+	border-radius: 15px;
+	padding: 2rem;
+	text-align: center;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+	height: 100%;
+}
+
+.stats-card:hover {
+	transform: translateY(-5px);
+}
+
+.stats-number {
+	font-size: 3rem;
+	font-weight: 700;
+	color: #667eea;
+	margin-bottom: 0.5rem;
+}
+
+.project-card {
+	background: white;
+	border-radius: 15px;
+	overflow: hidden;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+	height: 100%;
+}
+
+.project-card:hover {
+	transform: translateY(-5px);
+}
+
+.project-image {
+	height: 200px;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.project-badges {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.badge-featured {
+	background: #f59e0b;
+	color: white;
+	padding: 0.25rem 0.75rem;
+	border-radius: 15px;
+	font-size: 0.75rem;
+	margin-left: 0.25rem;
+}
+
+.badge-hot {
+	background: #ef4444;
+	color: white;
+	padding: 0.25rem 0.75rem;
+	border-radius: 15px;
+	font-size: 0.75rem;
+	margin-left: 0.25rem;
+}
+
+.project-content {
+	padding: 1.5rem;
+}
+
+.project-price {
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: #ef4444;
+	margin-bottom: 1rem;
+}
+
+.project-type {
+	background: #e0f2fe;
+	color: #0277bd;
+	padding: 0.25rem 0.75rem;
+	border-radius: 15px;
+	font-size: 0.875rem;
+	display: inline-block;
+	margin-bottom: 0.5rem;
+}
+
+.navbar-brand {
+	font-weight: 700;
+	color: #2c5282 !important;
+}
+
+.btn-primary {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	border: none;
+	border-radius: 25px;
+	padding: 0.75rem 2rem;
+	font-weight: 600;
+}
+
+.btn-outline-primary {
+	border: 2px solid #667eea;
+	color: #667eea;
+	border-radius: 25px;
+	padding: 0.75rem 2rem;
+	font-weight: 600;
+}
+
+.btn-outline-primary:hover {
+	background: #667eea;
+	border-color: #667eea;
+}
+
+.features-section {
+	padding: 5rem 0;
+}
+
+.feature-card {
+	text-align: center;
+	padding: 2rem;
+}
+
+.feature-icon {
+	font-size: 3rem;
+	color: #667eea;
+	margin-bottom: 1rem;
+}
+
+.footer {
+	background-color: #1a202c;
+	color: #e2e8f0;
+	padding: 3rem 0 2rem;
+}
