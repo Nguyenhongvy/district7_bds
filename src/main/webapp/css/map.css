@@ -1,0 +1,224 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #f8f9fa;
+}
+
+.map-container {
+	height: calc(100vh - 120px);
+	border-radius: 15px;
+	overflow: hidden;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	position: relative;
+}
+
+#map {
+	height: 100%;
+	width: 100%;
+}
+
+.filter-panel {
+	background: #f8f9fa;
+	padding: 20px;
+	border-radius: 8px;
+	margin-bottom: 20px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.map-container {
+	position: relative;
+	height: 600px;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#map {
+	height: 100%;
+	width: 100%;
+}
+
+.loading-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(255, 255, 255, 0.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+}
+
+.project-info-panel {
+	position: absolute;
+	top: 10px;
+	right: -400px;
+	width: 380px;
+	max-height: 80%;
+	background: white;
+	border-radius: 8px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+	padding: 20px;
+	transition: right 0.3s ease;
+	overflow-y: auto;
+	z-index: 1000;
+}
+
+.project-info-panel.active {
+	right: 10px;
+}
+
+.close-panel {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background: none;
+	border: none;
+	font-size: 18px;
+	color: #666;
+	cursor: pointer;
+}
+
+.close-panel:hover {
+	color: #333;
+}
+
+.type-badge {
+	background: #3b82f6;
+	color: white;
+	padding: 4px 8px;
+	border-radius: 4px;
+	font-size: 12px;
+}
+
+.status-badge {
+	padding: 4px 8px;
+	border-radius: 4px;
+	font-size: 12px;
+	color: white;
+}
+
+.status-planning {
+	background: #f59e0b;
+}
+
+.status-under_construction {
+	background: #3b82f6;
+}
+
+.status-completed {
+	background: #10b981;
+}
+
+.status-selling {
+	background: #ef4444;
+}
+
+.price-display {
+	font-size: 18px;
+	font-weight: 600;
+	color: #ef4444;
+}
+
+.status-badge {
+	padding: 0.25rem 0.75rem;
+	border-radius: 15px;
+	font-size: 0.875rem;
+	font-weight: 500;
+}
+
+.status-planning {
+	background-color: #fef3c7;
+	color: #92400e;
+}
+
+.status-construction {
+	background-color: #dbeafe;
+	color: #1e40af;
+}
+
+.status-completed {
+	background-color: #dcfce7;
+	color: #166534;
+}
+
+.status-handover {
+	background-color: #f3e8ff;
+	color: #7c3aed;
+}
+
+.status-badge:not([class*="status-"]) {
+	background-color: #ff0000;
+	color: white;
+}
+
+.type-badge {
+	background-color: #e0f2fe;
+	color: #0277bd;
+	padding: 0.25rem 0.75rem;
+	border-radius: 15px;
+	font-size: 0.875rem;
+}
+
+.filter-btn {
+	margin: 0.25rem;
+	border-radius: 20px;
+}
+
+.navbar-brand {
+	font-weight: 700;
+	color: #2c5282 !important;
+}
+
+.gm-style-iw {
+	max-width: 300px !important;
+}
+
+.custom-marker {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: 3px solid white;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.marker-apartment {
+	background-color: #3b82f6;
+}
+
+.marker-villa {
+	background-color: #10b981;
+}
+
+.marker-townhouse {
+	background-color: #f59e0b;
+}
+
+.marker-office {
+	background-color: #8b5cf6;
+}
+
+.marker-commercial {
+	background-color: #ef4444;
+}
+
+.loading-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(255, 255, 255, 0.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 2000;
+	border-radius: 15px;
+}
